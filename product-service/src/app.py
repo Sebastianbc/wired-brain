@@ -15,7 +15,7 @@ def get_products():
         return jsonify(products), 200
     return f'There are no products available', 404
 
-@app.route('/products/<str:name>')
+@app.route('/products/<name>')
 def get_product(name):
     product = [product for product in products if product['name'] == name]
     if product:
@@ -53,7 +53,7 @@ def put_product(id):
         
     return f'Product with {id} id not found', 404
 
-@app.route('/product/<str:name>', methods=['DELETE'])
+@app.route('/product/<name>', methods=['DELETE'])
 def delete_product(name):
     product = [product for product in products if product['name'] == name]
 
