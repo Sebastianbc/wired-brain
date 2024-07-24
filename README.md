@@ -23,3 +23,9 @@ When docker builds an image from a Docker file, it reconstructs the layers that 
 needs to, but it the layer already exists, it doesn't have to reconstruct it. As a 
 result, we placed the instructions that don't change frequently at the begining of
 the file so Docker doesn't have to reconstruct it again.
+
+To build an image from a docker file run: 
+docker run -t image-tag-or-name-to-assign current-dockerfile-path
+
+To run a docker container from an image run:
+docker run -d -p port-number:port-number image-name:image-tag
