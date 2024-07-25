@@ -49,3 +49,5 @@ To work with SQL Alchemy we:
     Create the SQL Alchemy object
     Initialize the Flask application to use SQL Alchemy
     Create the persistant objects
+
+A class method is used when we don't need a product instance to execute it.
