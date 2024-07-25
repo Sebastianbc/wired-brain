@@ -1,0 +1,5 @@
+services: # Defines all of our services or containers
+  appservice: # Service definition name
+    build: ./product-service/src #Builds the docker file in the directory
+    ports:
+      - "5000:5000"
