@@ -44,3 +44,8 @@ Multiple isolated environments on a single host.
 Variables and moving composition between environments.
 
 Nginx will receive web requests and forward them to our product service (app).
+
+To work with SQL Alchemy we:
+    Create the SQL Alchemy object
+    Initialize the Flask application to use SQL Alchemy
+    Create the persistant objects
