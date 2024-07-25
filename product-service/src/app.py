@@ -1,4 +1,5 @@
 from flask import Flask, jsonify, request
+from db import db # Import SQL Alchemy from db.py file
 
 products = [
     {'id': 1, 'name': 'Mug brain'},
@@ -6,6 +7,8 @@ products = [
 ]
 
 app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:password@db/products'
+db.init_app(app) # Initialize flask app
 
 # curl http://localhost:5000/products
 # Default http method for Flask's routes is GET
