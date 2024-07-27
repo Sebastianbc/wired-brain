@@ -29,3 +29,25 @@ docker run -t image-tag-or-name-to-assign current-dockerfile-path
 
 To run a docker container from an image run:
 docker run -d -p port-number:port-number image-name:image-tag
+
+Docker compose is a tool for defining and running multicontainer applications. It defines a YAML file to configure your application's services. We can start all of the services/containers defined in the YAML file with a single command.
+
+A docker compose file (YAML) defines fisrt of all a services section that container
+all of the docker sevices/containers.
+
+A service is an abstract definition of a computing resource within an application
+that can be scale or replace independently from other components.
+
+Preserve volume data when containers are created.
+Only recreate containers that have changed.
+Multiple isolated environments on a single host.
+Variables and moving composition between environments.
+
+Nginx will receive web requests and forward them to our product service (app).
+
+To work with SQL Alchemy we:
+    Create the SQL Alchemy object
+    Initialize the Flask application to use SQL Alchemy
+    Create the persistant objects
+
+A class method is used when we don't need a product instance to execute it.
