@@ -8,7 +8,7 @@ products = [
 ]
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:password@db/products'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://myuser:mypassword@db/products'
 db.init_app(app) # Initialize flask app
 
 # curl http://localhost:5000/products

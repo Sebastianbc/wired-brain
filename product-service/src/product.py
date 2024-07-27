@@ -1,4 +1,4 @@
-from db import db # Import from db.py to get access to SQLAlchemy
+import db # Import from db.py to get access to SQLAlchemy
 
 class Product(db.Model):
     __tablename__ = 'products'
